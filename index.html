@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="parragraphs">
+            <p id="p1">14:41 Market St. San Francisco</p>
+            <p id="p2">(123) 456-7890</p>
+            <p id="p3">Mon - Sun:8:00am - 6:00pm</p>
+        </div>
+        <button id="btnHeader" type="button" class="eventClick">LOGIN/REGISTER</button>
+        <nav class="navBar navBarTop" id="navBar">
+            <div class="slogan">
+                <figure class="eventClick slogan">
+                    <img src="./images/Logo.png" alt="logoStart" id="logoStart">
+                </figure>
+                <a class="eventClick" href="#header" id="casa">casa<strong>Royal</strong></a>
+
+            </div>
+
+            <ul class="navParragraphs" id="navMenu">
+                <li class="navLinks eventClick"><a href="#header" class="active">HOMEPAGE</a></li>
+                <li class="navLinks eventClick"><a href="#cards">PROPERTIES</a></li>
+                <li class="navLinks eventClick"><a href="#hotDeal">AGENCIES</a></li>
+                <li class="navLinks eventClick"><a href="#propertiesArea">ABOUT US</a></li>
+                <li class="navLinks eventClick"><a href="#agents">OUR TEAM</a></li>
+            </ul>
+            <button id="logoEnd" class="eventClick">SUBMIT LISTING</button>
+            <div class="menuResponsive">
+                <input type="checkbox" id="check">
+                <label for="check" class="btnCheck bar-btn">
+                    <figure>
+                        <img src="./images/menu.png" class="menuLogo">
+                    </figure>
+                </label>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="filters">
+        <div class="filterParragraphs">
+            <p id="filterP1">Let Us Guide You Home</p>
+            <a id="filterText2">Find the house of your dreams</a>
+        </div>
+        <div class="btnFilters">
+            <div id="btn1" class="btn">
+                <label class="labelBtn1 eventClick">Type</label>
+                <select name="Type" id="select1" class="eventClick">
+                    <option value="">Select Type</option>
+                    <option value="1">APARTMENT</option>
+                    <option value="2">HOUSE</option>
+                </select>
+            </div>
+            <div class="btn" id="btn2">
+                <label class="labelBtn1 eventClick">Status</label>
+                <select name="Type" id="select2" class="eventClick">
+                    <option value="">Select Status</option>
+                    <option value="1">For Sale</option>
+                    <option value="2">Sold</option>
+                </select>
+
+            </div>
+            <input type="text" class="btn" name="search" id="userSearch"
+                placeholder="Search for properties, suburbs or keywords...">
+            <button type="submit" class="btn eventClick" id="btn3">FIND PROPERTIES</button>
+        </div>
+    </section>
+    <article class="cards" id="cards">
+        <div class="textCards">
+            <a> CASAROYAL REAL ESTATE AGENCY</a>
+            <p><strong>Featured </strong>Properties</p>
+        </div>
+        <main id="mainContainer" class="eventClick">
+
+        </main>
+        <div class="containerBtn eventClick">
+            <p id="btnBottom">ALL PROPERTIES</p>
+        </div>
+
+    </article>
+    <article class="hotDeal" id="hotDeal">
+        <p id="textDealTop" class="textDealTop"> CASAROYAL REAL ESTATE AGENCY</p>
+        <P id="textDealTop2" class="textDealTop2"><strong>Hot</strong> Deal</P>
+        <section class="allDeal">
+            <div class="dealsLeft">
+                <button id="btnDealLeft" class="eventClick">Photos (4)</button>
+            </div>
+            <section class="dealsRight">
+                <div class="textsDeal">
+                    <p id="p1Deals">Residential Towe For Rent</p>
+                    <p id="p2Deals">15 Aparments of Type B</p>
+                    <p id="p3Deals">Los Angeles, CA</p>
+                    <button id="btnDeals" class="eventClick">From $1,700.00 Per Month</button>
+                    <figure>
+                        <img src="./images/videoButton.png" alt="logoDeal" id="videoBtn">
+                    </figure>
+                </div>
+                <div class="allIconsG">
+                    <figure class="iconsDeal">
+                        <section class="iconsDealBottom">
+                            <img src="./images/areaIconGris.png" alt="iconAreaDeal" class="iconsDealG">
+                            <div class="aDeals">
+                                <a><strong>1600 </strong></a>
+                                <a>Sq Ft</a>
+                            </div>
+                        </section>
+                        <section class="iconsDealBottom">
+                            <img src="./images/bedroomIconGris.png" alt="iconBedsDeal" class="iconsDealG">
+                            <div class="aDeals">
+                                <a>2</a>
+                                <a>Beds</a>
+                            </div>
+                        </section>
+                        <section class="iconsDealBottom">
+                            <img src="./images/bathroomIconGris.png" alt="iconBathDeal" class="iconsDealG">
+                            <div class="aDeals">
+                                <a>1</a>
+                                <a>Bath</a>
+                            </div>
+                        </section>
+                        <section class="iconsDealBottom">
+                            <img src="./images/garageIconGris.png" alt="iconGarageDeal" class="iconsDealG">
+                            <div class="aDeals">
+                                <a>1</a>
+                                <a>Garage</a>
+                            </div>
+
+                        </section>
+                    </figure>
+                </div>
+
+            </section>
+        </section>
+
+    </article>
+
+    <article class="propertiesArea hotDeal" id="propertiesArea">
+        <p class="textDealTop">CASAROYAL ESTATE AGENCY</p>
+        <p class="textDealTop2"><strong>Properties</strong> by Area</p>
+        <section class="allDeal pictures eventClick">
+            <div class="formatPictures LA grid1">
+                <a class="nameCity">LOS ANGELES</a>
+                <a class="quantityPropierties">24 Properties</a>
+            </div>
+            <div class="formatPictures SF grid2">
+                <a class="nameCity2">San Francisco</a>
+                <a class="quantityPropierties2">19 Properties</a>
+            </div>
+            <div class="formatPictures ST grid3">
+                <a class="nameCity2">Seattle</a>
+                <a class="quantityPropierties2">13 Properties</a>
+            </div>
+            <div class="formatPictures SD grid4">
+                <a class="nameCity">San Diego</a>
+                <a class="quantityPropierties">1 Property</a>
+            </div>
+
+        </section>
+    </article>
+    <article class="hotDeal" id="agents">
+        <p class="textDealTop">MEET OUR TEAM</p>
+        <p class="textDealTop2"><strong>Our</strong> Agents</p>
+        <section class="cardsAgents eventClick" id="cardAgents">
+        </section>
+        <nav class="navAgents">
+            <div class="containerCircle">
+                <div class="circle eventClick" id="circle1"></div>
+            </div>
+            <div class="circle eventClick" id="circle2"></div>
+            <div class="circle eventClick" id="circle3"></div>
+        </nav>
+    </article>
+
+    <section class="modal">
+        <div class="modal__container" id="modal__container">
+            <div class="allModal" id="allModal">
+                <img src="./images/PropertyImage.png" class="modal__img" id="modal__img">
+                <p id="p1Modal">$320,000.00 </p>
+                <p id="p2Modal">FOR SALE</p>
+                <p id="p3Modal">Beverly Hills CA</p>
+                <p id="p4Modal">272 S Rexford Dr, Beverly Hills, CA 90212, USA</p>
+            </div>
+            <div class="rightModal">
+                <figure>
+                    <div>
+                        <img src="./images/Area Icon.png" alt="areaIcon">
+                        <a><strong>2400</strong> Sq Ft</a>
+                    </div>
+                    <div>
+                        <img src="./images/Garage Icon.png" alt="garageIcon" class="figureModal">
+                        <a>2</a>
+                    </div>
+                    <div>
+                        <img src="./images/Bathroom Icon.png" alt="bathroomsIcon" class="figureModal">
+                        <a>3</a>
+                    </div>
+                    <div>
+                        <img src="./images/Bedroom Icon.png" alt="bedroomsIcon" class="figureModal">
+                        <a>3</a>
+                    </div>
+                </figure>
+                <div class="agentModal">
+                    <figure class="infoAgentModal">
+                        <img src="./images/agent-1-3-60x60.png" alt="icon" id="agentIconModal">
+                        <a id="nameAgentModal"> Hellen Mattis</a>
+                    </figure>
+                    <a id="monthsModal"> 4 months ago</a>
+                </div>
+            </div>
+            <a href="#" class="modal__close">Cerrar</a>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <script src="./main.js" type="text/javascript"></script>
+</body>
+
+</html>

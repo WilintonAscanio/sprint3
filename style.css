@@ -1,0 +1,933 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.header{
+  background-color: #2A41E8;
+  display: flex;  
+  height: 50px;
+  width: 100%;
+  justify-content: space-around;
+
+}
+.parragraphs{
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    color: white;
+    padding: 15px 40px;
+    font-size: 85%;
+    align-items: center;
+}
+.menuResponsive{
+    display: none;
+}
+.slogan{
+    display: flex;
+    height: 100%;
+    padding: 5px;
+    gap: 5px;
+}
+#btnHeader{
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    margin-right: 2%;
+    font-size: 85%;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #fafafafa;
+    
+}
+.navBar{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    margin-top: 50px;
+    
+    
+}
+.navBarTop{
+    margin-top: 3.3%;
+    
+}
+article[id]{
+    scroll-margin-top: 83px;
+}
+
+.navBar p{
+    align-self: center;
+    margin-left: 2%;
+    font-size: 25px;
+    
+}
+.navBar a{
+    align-self: center;
+    margin-left: 2%;
+    font-size: 10px;
+    text-decoration: none;
+
+}
+.navBar a:hover{
+    border-bottom: 2px solid #2A41E8;
+    color: black;
+}
+.navParragraphs{
+    list-style: none;
+    margin-left: 5%;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.navLinks{
+    font-size: 11px;
+    width: 80px;
+}
+#casa{
+    font-size: 19px;
+}
+#logoEnd{
+    height: 100%;
+    background-color: #FF5E14;
+    color: white;
+    width: 19%;
+    border: transparent;
+    font-size: 16px;
+}
+.scrol{
+    margin-top: 0%;
+}
+.filters{
+    width: 100%;
+    background-image: url(./images/hero-bg-image.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding: 10% 15%;
+
+}
+.filterParragraphs{
+    color: white;
+
+}
+#filterP1{
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+#filterText2{
+    font-size: 18px;
+}
+.btnFilters{
+    margin-top: 5%;
+    background-color: white;
+    height: 119px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+.btn{
+    height: 45%;
+    margin: 1%;
+
+}
+#btn1{
+    margin-left: 2%;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ECECEC;
+    border-radius: 5px;
+    padding: 8px;
+
+}
+.labelBtn1{
+    color: #646464;
+    margin-left: 5px;
+    font-size: 14px;
+}
+#select{
+    height: 35px;
+    background-color: #ECECEC;
+    border-radius: 10px;
+    border: transparent;
+    margin-left: 2px;
+    font-weight: 800;
+
+}
+#btn2{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ECECEC;
+    border-radius: 5px;
+    padding: 8px;
+}
+#userSearch{
+    width: 35%;
+    margin-left: 2%;
+    padding: 0px 0px 0px 10px;
+    color: #646464;
+    background-color: #ECECEC;
+    border: transparent;
+}
+#btn3{
+    width: 20%;
+    margin-right: 2%;
+    background-color: #2A41E8;
+    color: white;
+    border: transparent;
+    border-radius: 3px;
+}
+.cards{
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    height: 100%;
+}
+.textCards{
+    text-align: center;
+}
+.textCards a{
+    font-size: 12px;
+    color: #8C8C8C;
+}
+.textCards p{
+    font-size: 52px;
+    margin-bottom: 10%;
+}
+
+.card{
+    width: 100%;
+    height: 490px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    
+}
+main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    width: 100%;
+}
+.top{
+    height: 53.65%;
+    background-size: cover;
+    padding: 5%;
+}
+
+.infoTop{
+    color: white;
+    display: flex;
+    gap: 5px;
+    
+}
+#textHouse{
+    background-color: #2A42E8;
+    width: 80px;
+    height: 30px;
+    padding: 2.5%;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+
+}
+#textSale{
+    background-color: #FF5E15;
+    width: 78px;
+    height: 30px;
+    padding: 2.5%;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 2%;
+}
+#price{
+    margin-top: 150px;
+    background-color: white;
+    color: #2A42E8;
+    width: 128px;
+    height: 30px;
+    padding: 2%;
+    border-radius: 5px;
+    text-align: center;
+}
+.infoBottom{
+    margin: 3% 5%;
+    width: 92%;
+}
+.infoBottom p{
+    margin-top: 5%;
+    font-size: 17px;
+}
+#city{
+    font-size: 14px;
+    margin-left: 8%;
+    color: #848484;
+}
+.agent{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 5% 5% 0%;
+    border-bottom: 2px solid #F4F4F4;
+    margin-top: 5%;
+}
+#agentIcon{
+    width: 16px;
+    height: 16px;
+    margin-bottom: 10px;
+    
+    
+}
+#nameAgent{   
+     text-align: center;
+     justify-content: center;
+     font-size: 14px;
+     color: #2A41E8;
+}
+.infoAgent{
+    display: flex;
+    gap: 5px;
+}
+#months{
+    font-size: 14px;
+    color: #848484;
+}
+.iconsBottom{
+    margin-top: 6%;
+    display: flex;
+
+}
+.iconsBottomRight{
+    margin-left: 22%;
+}
+.iconRight{
+    margin-left: 16px;
+
+}
+.containerBtn{
+    margin-top: 70px;
+    height: 50px;
+}
+#btnBottom{
+    text-align: center;
+    background-color: #000000 ;
+    color: white;
+    width: 268px;
+    height: 100%;
+    border-radius: 30px;
+    padding: 1.5%;
+    margin-left: 38%;
+    font-size: 18px;
+}
+.hotDeal{
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    height: 100%;
+
+}
+.hotDeal p{
+    text-align: center;
+    margin-top: 10px;
+}
+.allDeal{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.dealsLeft{
+    background-image: url(./images/isaac-benhesed-249429-unsplash-1.png);
+    background-size: cover;
+    width: 100%;
+}
+.textsDeal{
+    text-align: center;
+}
+.textDealTop{
+    color: #8C8C8C;
+    font-size: 15px;
+    margin-bottom: 0;
+
+}
+.textDealTop2{
+    font-size: 45px;
+    margin-bottom: 10%;
+}
+.dealsRight{
+    background-color: #292929;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+#p1Deals{
+    font-size: 18px;
+    color: #9B9B9B;
+    margin-top: 10%;
+}
+#p2Deals{
+    font-size: 32px;
+    color: #ffffff;
+}
+#p3Deals{
+    font-size: 18px;
+    color: #9B9B9B;
+    margin-top: 5%;
+}
+#btnDeals{
+    background-color: #FF5E15;
+    color: #FFFFFF;
+    width: 230px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 5%;
+    border: transparent;
+}
+#videoBtn{
+    margin-top: 10%;
+
+}
+.allIconsG{
+    width: 100%;
+    display: flex;
+    padding: 5%;
+}
+.iconsDeal{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.iconsDealBottom{
+    height: 100%;
+    margin-bottom: 7%;
+    display: flex;
+}
+.aDeals{
+    font-size: 90%;
+    color: #9B9B9B;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.iconsDealG{
+    margin: 10px;
+    width: 25%;
+    height: 30px;
+}
+#btnDealLeft{
+    margin-top: 78%;
+    margin-left: 10%;
+    width: 119px;
+    height: 41px;
+    color: #2A42E8;
+    border-radius: 5px;
+    border: transparent;
+    font-weight: 800;
+
+}
+.pictures{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.formatPictures{
+    height: 335px;
+    border-radius: 5px;
+
+}
+.LA{
+    background-image: url(./images/losAngeles.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+.SF{
+    background-image: url(./images/sanFrancisco.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+.ST{
+    background-image: url(./images/seattle.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.SD{
+    background-image: url(./images/sanDiego.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.nameCity{
+    margin-top: 250px;
+    color: white;
+    margin-left: 8%;
+    font-size: 25px;
+}
+.grid1{
+    grid-column: 1/2;
+}
+.grid2{
+    grid-column: 2/4;
+}
+.grid3{
+    grid-column: 1/3;
+}
+.grid4{
+    grid-column: 3/4;
+}
+.nameCity2{
+    margin-top: 250px;
+    margin-left: 5%;
+    color: white;
+    font-size: 25px;
+}
+.quantityPropierties{
+    color: white;
+    margin-left: 12%;
+    font-size: 14px;
+}
+.quantityPropierties2{
+    color: white;
+    margin-left: 7%;
+}
+.cardsAgents{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    margin-bottom: 5%;
+}
+.cardAgent{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 2.5% 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #FFFFFF;
+}
+#photoAgent{
+    width: 100%;
+}
+.info{
+    color: #636363;
+    font-size: 100%;
+}
+
+.nameAgent{
+    font-size: 36px;
+}
+.celAgent{
+    margin-top: 5%;
+}
+.navAgents{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 100%;
+}
+.containerCircle{
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(14, 13, 13);
+    padding: 8px;
+    border-radius: 100%;
+}
+.eventClick{
+    cursor: pointer;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display:flex;  
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .7s;
+
+
+
+}
+.modal__container{
+    margin: auto;
+    width: 90%;
+    background-color: #fff ;
+    max-width: 600px;
+    max-height: 90%;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-template-columns: auto auto;
+    transform: var(--transform);
+    transition: transform .3s;
+    transition: var(--transition);
+}
+.rightModal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-self: start;
+    max-height: 100%;
+
+}
+.figureModal{
+    margin-top: 20px;
+}
+.modal__img{
+    width: 90%;
+    max-width: 350px;
+}
+.modal__close{
+    text-decoration: none;
+    color: white;
+    background-color: #2A41E8;
+    padding: 1em 3em;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+    margin-left: 40%;
+
+}
+.modal__close:hover{
+    color: #2A41E8;
+    background-color: white;
+
+}
+#p1Modal{
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    color: #2A41E8;
+    background-color: rgb(233, 225, 225);
+    border-radius: 5px;
+}
+#p2Modal{
+    padding-top: 10px;
+    color: white;
+    height: 40px;
+    width: 100px;
+    background-color: #FF5E14;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+#p3Modal{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #848484;
+}
+#p4Modal{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.agentModal{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#nameAgentModal{
+    font-size: 14px;
+    color: #2A41E8;
+}
+#monthsModal{
+    font-size: 14px;
+    color: #848484;
+}
+@media(max-width: 1100px){
+    .header{
+        height: 7%; 
+    }
+    .navBarTop{
+        margin-top: 4.4%;
+    }
+    #btnHeader{
+        margin: 13px;
+    }
+    #logoStart{
+        margin: 40%;
+        height: 40px;
+        width: 40px;
+        padding: 10%;
+        align-self: center;
+    }
+    main{
+        gap: 5px;
+    }
+    .cardsAgents{
+        gap: 5px;
+    }
+    #btnBottom{
+        margin-left: 32%;
+        width: 35%;
+    }    
+    #price{
+        margin-top: 75%;
+    }
+    .iconsDealG{
+        margin-top: 5px;
+        width: 24%;
+        height: 25px;
+    }
+    .aDeals{
+        font-size: 70%;
+    }
+}
+@media(max-width:775px){
+    .header{
+        height: 55px;
+    }
+    .navBarTop{
+        margin-top: 55px;
+    }
+    .navBar{
+        height: 60px;
+    }
+    .navLinks{
+        width: 70px;
+    }
+    .cards{
+        width: 100%;
+        margin-left: 0;
+    }
+    #btnBottom{
+        margin-left: 32%;
+        width: 35%;
+    }
+    main{
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+    .cardsAgents{
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+    #price{
+        margin-top: 50%;
+    }
+    .hotDeal{
+        width: 100%;
+        margin-left: 0;
+    }
+    .parragraphs{
+        font-size: 60%;  
+    }
+    #btnHeader{
+        font-size: 60%;
+    }
+    .iconsBottomRight{
+        margin-left: 18%;
+    }
+    .iconRight{
+        margin-left: 15px;
+    }   
+    #btnDealLeft{
+        margin-top: 95%;
+     }
+
+}
+@media(max-width:657px){
+
+    .header{
+        height: 50px;
+    }
+    .filters{
+        margin-top: 60px;
+        height: 200px;
+    }
+    .cards{
+        width: 80%;
+        margin: 10%;
+    }
+    .hotDeal{
+        width: 80%;
+        margin: 10%;
+    }
+    .textDealTop{
+        font-size: 15px;
+    }
+    .textDealTop2{
+        font-size: 30px;
+    }
+    main{
+        grid-template-columns: auto;
+        gap: 30px;
+    }
+    .cardsAgents{
+        grid-template-columns: auto;
+    }
+    .navBarTop{
+        margin-top: 50px;
+    }
+    .filters{
+        padding: 10px;
+        width: 100%;
+    }
+    #filterP1{
+        font-size: 100%;
+        margin-bottom: 10px;
+    }
+    #filterText2{
+        font-size: 60%;
+    }
+    .btnFilters{
+        margin-top: 5%;
+        background-color: white;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .btn{
+        height: 100%;
+        margin-left: 0px;
+    }
+    .textCards a{
+        font-size: 15px;
+    }
+    .textCards p{
+        font-size: 30px;
+    }
+    #price{
+        margin-top: 150px;
+        padding: 1%;
+    }
+    .allDeal{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    #p1Deals{
+        font-size: 70%;
+        margin-top: 10%;
+    }
+    #p2Deals{
+        font-size: 100%;
+    }
+    #p3Deals{
+        font-size: 18px;
+        margin-top: 5%;
+     }
+     .agent{
+        margin-top: 2%;
+    }
+    #agentIcon{
+        margin-bottom: 0px;
+    }
+
+    .iconsBottom{
+        justify-content: space-between;
+    }
+    .iconRight{
+        margin-left: 10px;
+    }
+    #btnBottom{
+        height: 30px;
+        margin-left: 30%;
+        width: 120px;
+        font-size: 12px;
+    }
+    .pictures{
+        gap: 5px;
+    }
+    .formatPictures{
+        height: 150px;
+    }
+    .nameCity{
+        margin-top: 85px;
+        font-size: 15px;
+    }
+    .nameCity2{
+        margin-top: 85px;
+        font-size: 15px;
+    }
+    .cardAgent{
+        padding: 10%;
+        gap: 20px;
+    }
+    .navBar{
+        justify-content: space-between;
+    }
+    #logoStart{
+        margin: 15px 5px;
+    }
+    #logoEnd{
+        display: none;
+    }
+    .menuResponsive{
+        display: block;
+    }
+    .menuLogo{
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+    .navParragraphs{
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+    .navParragraphs{
+        margin-left: 0;
+    }
+    .modal__container{
+        padding: 2em 1.5em;
+    }
+
+    
+}
