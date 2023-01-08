@@ -72,6 +72,7 @@
             <input type="text" class="btn" name="search" id="userSearch"
                 placeholder="Search for properties, suburbs or keywords...">
             <button type="submit" class="btn eventClick" id="btn3">FIND PROPERTIES</button>
+
         </div>
     </section>
     <article class="cards" id="cards">
@@ -83,7 +84,8 @@
 
         </main>
         <div class="containerBtn eventClick">
-            <p id="btnBottom">ALL PROPERTIES</p>
+            <p id="btnBottom" class="btnBottom">ALL PROPERTIES</p>
+            <p id="lessProperties" class="btnBottom hidden">SHOW LESS</p>
         </div>
 
     </article>
@@ -180,44 +182,14 @@
         </nav>
     </article>
 
+
     <section class="modal">
         <div class="modal__container" id="modal__container">
-            <div class="allModal" id="allModal">
-                <img src="./images/PropertyImage.png" class="modal__img" id="modal__img">
-                <p id="p1Modal">$320,000.00 </p>
-                <p id="p2Modal">FOR SALE</p>
-                <p id="p3Modal">Beverly Hills CA</p>
-                <p id="p4Modal">272 S Rexford Dr, Beverly Hills, CA 90212, USA</p>
-            </div>
-            <div class="rightModal">
-                <figure>
-                    <div>
-                        <img src="./images/Area Icon.png" alt="areaIcon">
-                        <a><strong>2400</strong> Sq Ft</a>
-                    </div>
-                    <div>
-                        <img src="./images/Garage Icon.png" alt="garageIcon" class="figureModal">
-                        <a>2</a>
-                    </div>
-                    <div>
-                        <img src="./images/Bathroom Icon.png" alt="bathroomsIcon" class="figureModal">
-                        <a>3</a>
-                    </div>
-                    <div>
-                        <img src="./images/Bedroom Icon.png" alt="bedroomsIcon" class="figureModal">
-                        <a>3</a>
-                    </div>
-                </figure>
-                <div class="agentModal">
-                    <figure class="infoAgentModal">
-                        <img src="./images/agent-1-3-60x60.png" alt="icon" id="agentIconModal">
-                        <a id="nameAgentModal"> Hellen Mattis</a>
-                    </figure>
-                    <a id="monthsModal"> 4 months ago</a>
-                </div>
-            </div>
-            <a href="#" class="modal__close">Cerrar</a>
+
         </div>
+
+        </div>
+
 
     </section>
 
