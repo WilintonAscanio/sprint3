@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
 </head>
 
 <body>
@@ -17,31 +18,31 @@
             <p id="p3">Mon - Sun:8:00am - 6:00pm</p>
         </div>
         <button id="btnHeader" type="button" class="eventClick">LOGIN/REGISTER</button>
-        <nav class="navBar navBarTop" id="navBar">
+        <nav class="navBar navBarTop navBarResponsive" id="navBar">
             <div class="slogan">
-                <figure class="eventClick slogan">
-                    <img src="./images/Logo.png" alt="logoStart" id="logoStart">
-                </figure>
-                <a class="eventClick" href="#header" id="casa">casa<strong>Royal</strong></a>
-
+                <div class="slogan2">
+                    <figure class="eventClick slogan3">
+                        <img src="./images/Logo.png" alt="logoStart" id="logoStart">
+                    </figure>
+                    <a class="eventClick" href="#header" id="casa">casa<strong>Royal</strong></a>
+                </div>
+                <div class="menuResponsive">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <i class="icons fi fi-br-menu-burger"></i>
+                    <i class="icons fi fi-br-cross"></i>
+                </div>
             </div>
 
-            <ul class="navParragraphs" id="navMenu">
-                <li class="navLinks eventClick"><a href="#header" class="active">HOMEPAGE</a></li>
-                <li class="navLinks eventClick"><a href="#cards">PROPERTIES</a></li>
-                <li class="navLinks eventClick"><a href="#hotDeal">AGENCIES</a></li>
-                <li class="navLinks eventClick"><a href="#propertiesArea">ABOUT US</a></li>
-                <li class="navLinks eventClick"><a href="#agents">OUR TEAM</a></li>
+
+            <ul class="navParragraphs menuPhone hiddenMenu" id="navMenu">
+                <li class="navLinks  eventClick "><a href="#header" class="navLinks">HOMEPAGE</a></li>
+                <li class="navLinks eventClick"><a href="#cards" class="navLinks">PROPERTIES</a></li>
+                <li class="navLinks eventClick"><a href="#hotDeal" class="navLinks">AGENCIES</a></li>
+                <li class="navLinks eventClick"><a href="#propertiesArea" class="navLinks">ABOUT US</a></li>
+                <li class="navLinks eventClick"><a href="#agents" class="navLinks">OUR TEAM</a></li>
             </ul>
             <button id="logoEnd" class="eventClick">SUBMIT LISTING</button>
-            <div class="menuResponsive">
-                <input type="checkbox" id="check">
-                <label for="check" class="btnCheck bar-btn">
-                    <figure>
-                        <img src="./images/menu.png" class="menuLogo">
-                    </figure>
-                </label>
-            </div>
+
 
         </nav>
     </header>
@@ -199,6 +200,7 @@
 
 
     <script src="./main.js" type="text/javascript"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

@@ -27,11 +27,17 @@
     display: none;
 }
 .slogan{
+    border-right: 1px solid #9B9B9B;
     display: flex;
-    height: 100%;
-    padding: 5px;
-    gap: 5px;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+
 }
+.slogan2{
+    display: flex;
+}
+
 #btnHeader{
     background-color: transparent;
     border: transparent;
@@ -75,13 +81,13 @@ article[id]{
 .navBar a{
     align-self: center;
     margin-left: 2%;
-    font-size: 10px;
+    font-size: 12px;
     text-decoration: none;
 
 }
 .navBar a:hover{
     border-bottom: 2px solid #2A41E8;
-    color: black;
+    color: rgb(26, 45, 216);
 }
 .navParragraphs{
     list-style: none;
@@ -97,7 +103,8 @@ article[id]{
     width: 80px;
 }
 #casa{
-    font-size: 19px;
+    font-size: 25px;
+    color: #000000;
 }
 #logoEnd{
     height: 100%;
@@ -106,6 +113,9 @@ article[id]{
     width: 19%;
     border: transparent;
     font-size: 16px;
+}
+#logoEnd:hover{
+    background-color: #111111;
 }
 .scrol{
     margin-top: 0%;
@@ -232,6 +242,7 @@ main{
     background-position: center;
     padding: 5%;
 }
+
 
 .infoTop{
     color: white;
@@ -708,13 +719,6 @@ main{
     #btnHeader{
         margin: 13px;
     }
-    #logoStart{
-        margin: 40%;
-        height: 40px;
-        width: 40px;
-        padding: 10%;
-        align-self: center;
-    }
     main{
         gap: 5px;
     }
@@ -741,6 +745,7 @@ main{
     .header{
         height: 55px;
     }
+   
     .navBarTop{
         margin-top: 55px;
     }
@@ -813,6 +818,89 @@ main{
     .textDealTop2{
         font-size: 30px;
     }
+    .navBar{
+        flex-direction: column;
+
+    }
+    .slogan{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menuPhone{
+        width: 50%;
+        background-color: #FFFFFF;
+        flex-direction: column;
+        height: 100vh;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-end;
+        border-radius: 10px;
+        border-bottom: 1px solid #2A41E8;
+    }
+    .navLinks{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+
+    }
+    .navLinks a{
+        font-size: 15px;
+    }
+    .navLinks a:hover{
+        transition: .5s;
+        font-size: 20px;
+    }
+    .navLinks a:hover{
+        color: #2A41E8;
+    }
+    #logoEnd{
+        display: none;
+    }
+    .menuResponsive{
+        display: block;
+
+    }
+    .menuLogo{
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+    .hiddenMenu{
+        display: none;
+        
+       }
+    .checkbox, .icons{
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        cursor: pointer;
+    
+    }
+    .icons{
+        pointer-events: none;
+        font-size: 24px;
+    
+    }
+    .checkbox{
+        opacity: 0;
+    }
+    
+    .fi-br-cross{
+        display: none;
+    }
+    .checkbox:checked ~ .fi-br-menu-burger{
+        display: none;
+    
+    }
+    .checkbox:checked ~ .fi-br-cross{
+        display: block;
+    }
+    
     main{
         grid-template-columns: auto;
         gap: 30px;
@@ -912,36 +1000,13 @@ main{
         padding: 10%;
         gap: 20px;
     }
-    .navBar{
-        justify-content: space-between;
-    }
-    #logoStart{
-        margin: 15px 5px;
-    }
-    #logoEnd{
-        display: none;
-    }
-    .menuResponsive{
-        display: block;
-    }
-    .menuLogo{
-        width: 40px;
-        height: 40px;
-        margin-right: 15px;
-        margin-top: 15px;
-    }
-    .navParragraphs{
-        display: none;
-    }
-    #check{
-        display: none;
-    }
     .navParragraphs{
         margin-left: 0;
     }
     .modal__container{
         padding: 2em 1.5em;
     }
+
 
     
 }

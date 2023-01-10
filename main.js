@@ -44,7 +44,7 @@ const lessProperties = document.getElementById('lessProperties');
 
 
 userSearch.addEventListener('input', (e) => {
-    let arrayFiltered = predios.filter(key => key.place.toLowerCase().startsWith(e.target.value))
+    let arrayFiltered = predios.filter(key => key.place.toLowerCase().startsWith(e.target.value.toLowerCase()))
 
     renderCards(arrayFiltered);
 })
@@ -53,7 +53,12 @@ btnProperties.addEventListener('click', () => {
 
     if (select1.value == "" || select2.value == "") {
 
-        alert('Seleccione ambas opciones')
+        Swal.fire({
+            title: "Error!",
+            text: "Please select the 2 options.",
+            icon: "error"
+            
+        })
 
     } else {
         let opc1 = select1.value == "1" ? "APARTMENT" : "HOUSE";
@@ -229,6 +234,25 @@ lessProperties.addEventListener('click', () => {
     allProperties.classList.remove('hidden');
     lessProperties.classList.add('hidden')
   })
+})
+
+const check = document.getElementById('checkbox');
+const navMenu = document.getElementById('navMenu');
+
+check.addEventListener('click', () => {
+  if(check.checked){
+    document.getElementById('navMenu').classList.remove('hiddenMenu');
+  }
+  else{
+    document.getElementById('navMenu').classList.add('hiddenMenu');
+  }
+})
+
+navMenu.addEventListener('click', (e) => {
+    if(e.target.classList.contains('navLinks')){
+        navMenu.classList.toggle('hiddenMenu');
+        check.checked = false;
+    }
 })
 
 
